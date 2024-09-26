@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net35</TargetFramework>
+        <AssemblyName>COM3D2.SubtitleEnabler.Plugin</AssemblyName>
+        <RootNamespace>COM3D2.SubtitleEnabler.Plugin</RootNamespace>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+        <RestoreAdditionalProjectSources>
+            https://api.nuget.org/v3/index.json;
+            https://nuget.bepinex.dev/v3/index.json;
+            https://nuget.samboy.dev/v3/index.json
+        </RestoreAdditionalProjectSources>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Core" Version="5.*" />
+        <PackageReference Include="COM3D2.GameLibs" Version="2.36.2-r.0" />
+        <PackageReference Include="HarmonyX" Version="2.13.0" />
+        <Reference Include="UnityEngine">
+            <HintPath>./lib/UnityEngine.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+    </ItemGroup>
+</Project>
