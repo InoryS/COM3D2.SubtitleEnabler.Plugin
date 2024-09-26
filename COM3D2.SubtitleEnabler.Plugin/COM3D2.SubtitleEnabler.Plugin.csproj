@@ -37,7 +37,7 @@
         <PackageReference Include="COM3D2.GameLibs" Version="2.36.2-r.0" />
         <PackageReference Include="HarmonyX" Version="2.13.0" />
         <Reference Include="UnityEngine">
-            <HintPath>./lib/UnityEngine.dll</HintPath>
+            <HintPath>../lib/UnityEngine.dll</HintPath>
         </Reference>
     </ItemGroup>
 
