@@ -13,7 +13,7 @@ In the English and Chinese versions of the game, there is a subtitle function th
 
 This plugin tricks the game into thinking that it is running a multi-language version, so that the localization options are turned on.
 
-Some UI/texts have multi-language versions themselves, and the official version will be used at this time. For example, if you choose English, the interface will become English. If you use YAtranslator to replace access to do the translation, you will find that it does not work. This is because you only overwrite the Japanese UI, but not the English UI. These are different files, and sometimes in different locations in a file.
+Some UI/texts have multi-language versions themselves, and the official version will be used at this time. For example, if you choose English, the interface will become English. If you use YAtranslator to replace assest to do the translation, you will find that it does not work. This is because you only overwrite the Japanese UI, but not the English UI. These are different files, and sometimes in different locations in a file.
 
 Basically the [I18nEX](https://github.com/ghorsington/COM3D2.i18nEx) plugin works on the same principle, using the official translation options, but adding some non-existent translations to the game, so it can only translate content that is officially marked as translatable.
 
@@ -43,7 +43,7 @@ KISS 使用 [Unity I2 Localization](https://assetstore.unity.com/packages/tools/
 
 本插件欺骗游戏让其认为在运行多语言版本，从而打开本地化选项。
 
-部分 UI/文本 本身有多语言版本，此时会使用官方的版本，例如：如果你选择 English，那么界面会变成英文。如果你使用 YAtranslator 来替换 access 来做翻译，你会发现没有生效，这是因为你只覆盖了日语UI，而没有覆盖英文 UI，这是不同的文件，有时也在一个文件的不同的位置上。
+部分 UI/文本 本身有多语言版本，此时会使用官方的版本，例如：如果你选择 English，那么界面会变成英文。如果你使用 YAtranslator 来替换 assest 来做翻译，你会发现没有生效，这是因为你只覆盖了日语UI，而没有覆盖英文 UI，这是不同的文件，有时也在一个文件的不同的位置上。
 
 基本上 [I18nEX](https://github.com/ghorsington/COM3D2.i18nEx) 插件也是同样的原理，使用官方提供的翻译选项，但新增一些不存在的翻译到游戏中，因此它只能翻译官方标记为可翻译的内容。
 
