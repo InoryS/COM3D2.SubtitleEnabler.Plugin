@@ -1,8 +1,11 @@
 # COM3D2.SubtitleEnabler.Plugin
 
 It is not well known that COM3D2 has multiple language versions, currently including English, Traditional Chinese, Simplified Chinese, and Japanese.
+
 Each version is divided into a public version and an adult version (at least in the code)
+
 KISS uses the [Unity I2 Localization plugin](https://assetstore.unity.com/packages/tools/localization/i2-localization-14884) to provide localization support for the game. Different game versions share some code, but they are not exactly the same.
+
 
 Most players play the Japanese version because the content is the most complete.
 
@@ -28,8 +31,11 @@ This plugin is not a translation plugin, it is only created to enable subtitles,
 
 
 众所不周知，COM3D2 有多语言版本，目前包括 英文版、正体中文版、简体中文版、日文版。
+
 每个版本又分为公共版本和成人版本（至少在代码中是这样）
+
 KISS 使用 [Unity I2 Localization](https://assetstore.unity.com/packages/tools/localization/i2-localization-14884) 插件来为游戏提供本地化支持，不同的游戏版本共享一些代码，但不完全相同。
+
 
 大部分玩家玩日语版，因为内容最完整。
 
